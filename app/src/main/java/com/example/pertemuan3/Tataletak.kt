@@ -47,21 +47,6 @@ fun TataletakRow(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakBox(modifier: Modifier) {
-    Box(
-        modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth(), contentAlignment = Alignment.Center
-    ){
-        Text(text = "Box 1")
-        Text(text = "Column 1")
-        Text(text = "Row 1")
-        Text(text = "Box 2")
-        Text(text = "Column 2")
-    }
-}
-
-@Composable
 fun TataletakColumnRow(modifier: Modifier) {
     Column() {
 //Baris1
@@ -72,7 +57,16 @@ fun TataletakColumnRow(modifier: Modifier) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
             Text(text = "Komponen3Baris1")
+
+//Baris2
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Komponen1Baris2")
+                Text(text = "Komponen2Baris2")
+                Text(text = "Komponen3Baris2")
             }
         }
     }
-
+}
