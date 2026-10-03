@@ -16,6 +16,8 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun LayarLogin(modifier: Modifier = Modifier){
     Box(modifier = modifier.fillMaxSize()) {
+        LatarGambar()
+        KontenLogin()
     }
 }
 
