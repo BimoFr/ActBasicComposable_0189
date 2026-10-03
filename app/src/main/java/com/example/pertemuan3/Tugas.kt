@@ -3,12 +3,15 @@ package com.example.pertemuan3
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun LayarLogin(modifier: Modifier = Modifier){
@@ -33,6 +36,34 @@ fun KontenLogin(){
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(modifier = Modifier.height(70.dp))
+        HeaderJudul()
+        Spacer(modifier = Modifier.height(40.dp))
+        LogoGambar()
+        Spacer(modifier = Modifier.height(60.dp))
+        DataMahasiswa()
+        Spacer(modifier = Modifier.height(30.dp))
+        FotoProfil()
 
     }
+}
+
+@Composable
+fun FotoProfil() {
+    TODO("Not yet implemented")
+}
+
+@Composable
+fun DataMahasiswa() {
+    TODO("Not yet implemented")
+}
+
+@Composable
+fun LogoGambar() {
+    TODO("Not yet implemented")
+}
+
+@Composable
+fun HeaderJudul() {
+    TODO("Not yet implemented")
 }
