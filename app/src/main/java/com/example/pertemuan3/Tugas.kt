@@ -62,7 +62,25 @@ fun FotoProfil() {
 
 @Composable
 fun DataMahasiswa() {
-    TODO("Not yet implemented")
+    Text(
+        text = "Nama",
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Red
+    )
+    Text(
+        text = "Bimo Fadhlurrahman",
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Blue
+    )
+    Text(
+        text = "20240140189",
+        fontSize = 24.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Black
+    )
+
 }
 
 @Composable
