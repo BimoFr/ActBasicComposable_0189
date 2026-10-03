@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -66,7 +67,12 @@ fun DataMahasiswa() {
 
 @Composable
 fun LogoGambar() {
-    TODO("Not yet implemented")
+    val gambarLogo = painterResource(id = R.drawable.logo_umy)
+    Image(
+        painter = gambarLogo,
+        contentDescription = "Logo",
+        modifier = Modifier.size(130.dp)
+    )
 }
 
 @Composable
