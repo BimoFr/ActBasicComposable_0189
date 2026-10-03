@@ -56,7 +56,6 @@ fun KontenLogin(){
         DataMahasiswa()
         Spacer(modifier = Modifier.height(30.dp))
         FotoProfil()
-
     }
 }
 
@@ -75,9 +74,10 @@ fun FotoProfil() {
             contentDescription = "Foto Profil",
             contentScale = ContentScale.Crop,
             modifier = Modifier
-                .fillMaxHeight() //
+                .fillMaxHeight()
                 .width(150.dp)
         )
+    }
 }
 
 @Composable
@@ -100,7 +100,6 @@ fun DataMahasiswa() {
         fontWeight = FontWeight.Bold,
         color = Color.Black
     )
-
 }
 
 @Composable
@@ -126,5 +125,4 @@ fun HeaderJudul() {
         fontSize = 14.sp,
         color = Color.White
     )
-
 }
